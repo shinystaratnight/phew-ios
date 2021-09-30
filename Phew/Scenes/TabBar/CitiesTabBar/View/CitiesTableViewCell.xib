@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TAHOMA_0.TTF">
+            <string>Tahoma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CitiesTableViewCell" rowHeight="100" id="phq-us-8b7" customClass="CitiesTableViewCell" customModule="Phew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="phq-us-8b7" id="9k4-21-QAN">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZ9-8x-Pbw" customClass="ViewShaow" customModule="Phew" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="400" height="84"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mans" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPh-kg-Qep">
+                                <rect key="frame" x="10" y="33.5" width="37" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="15"/>
+                                <color key="textColor" name="textColorBlack"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rjr-Os-VnC">
+                                <rect key="frame" x="369" y="21" width="21" height="42"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="love" translatesAutoresizingMaskIntoConstraints="NO" id="54C-m9-uJr">
+                                        <rect key="frame" x="0.0" y="0.0" width="21" height="21"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAO-ec-P54">
+                                        <rect key="frame" x="3.5" y="26" width="14.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" name="mainColorRed"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="backgroundCell"/>
+                        <constraints>
+                            <constraint firstItem="rjr-Os-VnC" firstAttribute="centerY" secondItem="aZ9-8x-Pbw" secondAttribute="centerY" id="XtL-NS-eMe"/>
+                            <constraint firstItem="CPh-kg-Qep" firstAttribute="leading" secondItem="aZ9-8x-Pbw" secondAttribute="leading" constant="10" id="fGW-w6-jSR"/>
+                            <constraint firstItem="CPh-kg-Qep" firstAttribute="centerY" secondItem="aZ9-8x-Pbw" secondAttribute="centerY" id="iqx-xP-MN3"/>
+                            <constraint firstAttribute="trailing" secondItem="rjr-Os-VnC" secondAttribute="trailing" constant="10" id="tep-pn-2jH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aZ9-8x-Pbw" secondAttribute="trailing" constant="8" id="NRK-h5-ZXT"/>
+                    <constraint firstAttribute="bottom" secondItem="aZ9-8x-Pbw" secondAttribute="bottom" constant="8" id="dNt-T1-ggj"/>
+                    <constraint firstItem="aZ9-8x-Pbw" firstAttribute="leading" secondItem="9k4-21-QAN" secondAttribute="leading" constant="8" id="l2D-sX-kqw"/>
+                    <constraint firstItem="aZ9-8x-Pbw" firstAttribute="top" secondItem="9k4-21-QAN" secondAttribute="top" constant="8" id="yxv-Ks-nqM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="vKo-ua-MjD"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageReact" destination="54C-m9-uJr" id="ZjU-QH-4iu"/>
+                <outlet property="lblCityName" destination="CPh-kg-Qep" id="glo-zM-3WO"/>
+                <outlet property="lblCountReact" destination="rAO-ec-P54" id="Juu-s8-Le9"/>
+            </connections>
+            <point key="canvasLocation" x="68.115942028985515" y="155.35714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="love" width="21" height="21"/>
+        <namedColor name="backgroundCell">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColorRed">
+            <color red="0.88200002908706665" green="0.11800000071525574" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColorBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

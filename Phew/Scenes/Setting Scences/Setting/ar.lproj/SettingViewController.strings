@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Edit Profile "; ObjectID = "26s-kH-NM5"; */
+"26s-kH-NM5.text" = "تعديل البيانات";
+
+/* Class = "UILabel"; text = "Premium Membership Settings"; ObjectID = "4oZ-ql-mWs"; */
+"4oZ-ql-mWs.text" = "إعدادات العضوية المميزة";
+
+/* Class = "UILabel"; text = "Night Mode"; ObjectID = "AfS-qY-quQ"; */
+"AfS-qY-quQ.text" = "الوضع الليلى";
+
+/* Class = "UILabel"; text = "Contact Us"; ObjectID = "BtU-La-du4"; */
+"BtU-La-du4.text" = "اتصل بنا";
+
+/* Class = "UILabel"; text = "Notification"; ObjectID = "dNO-bv-aIK"; */
+"dNO-bv-aIK.text" = "الإشعارات";
+
+/* Class = "UILabel"; text = "Log Out"; ObjectID = "psy-cE-YLc"; */
+"psy-cE-YLc.text" = "تسجيل الخروج";
+
+/* Class = "UILabel"; text = "About App"; ObjectID = "rSv-od-ayv"; */
+"rSv-od-ayv.text" = "نبذة عن التطبيق";
+
+/* Class = "UILabel"; text = "Policy"; ObjectID = "tYw-oh-jvP"; */
+"tYw-oh-jvP.text" = "سياسة الإستخدام";

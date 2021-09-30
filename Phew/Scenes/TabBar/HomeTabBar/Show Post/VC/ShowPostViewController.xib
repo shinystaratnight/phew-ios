@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowPostViewController" customModule="Phew" customModuleProvider="target">
+            <connections>
+                <outlet property="tableViewComments" destination="uZP-Og-U8b" id="tNf-Pe-iLs"/>
+                <outlet property="txtComment" destination="R6w-tQ-dZG" id="8hz-Ou-5U1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1M-hc-MUu">
+                    <rect key="frame" x="10" y="49" width="394" height="808"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKH-I0-HaC">
+                            <rect key="frame" x="15" y="5" width="364" height="798"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uZP-Og-U8b">
+                                    <rect key="frame" x="0.0" y="5" width="364" height="738"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3K-Uq-7dh">
+                                    <rect key="frame" x="15" y="748" width="334" height="45"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2BY-hF-CcC">
+                                            <rect key="frame" x="10" y="0.0" width="314" height="45"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WA-kw-xEd">
+                                                    <rect key="frame" x="0.0" y="5.5" width="40" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="0fu-um-dyV"/>
+                                                    </constraints>
+                                                    <state key="normal" title="send">
+                                                        <color key="titleColor" red="0.88440269230000002" green="0.1165064052" blue="0.17294833060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnCommentTapped:" destination="-1" eventType="touchUpInside" id="cTt-IU-s8G"/>
+                                                    </connections>
+                                                </button>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type comment here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6w-tQ-dZG">
+                                                    <rect key="frame" x="48" y="13.5" width="238" height="18.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeD-57-g0V">
+                                                    <rect key="frame" x="294" y="12.5" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="9fa-6M-bNn"/>
+                                                        <constraint firstAttribute="height" constant="20" id="xBJ-4Z-I8n"/>
+                                                    </constraints>
+                                                    <state key="normal" image="picture"/>
+                                                    <connections>
+                                                        <action selector="btnPicImageTapped:" destination="-1" eventType="touchUpInside" id="SRm-vT-jeG"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="backgroundCell"/>
+                                    <constraints>
+                                        <constraint firstItem="2BY-hF-CcC" firstAttribute="top" secondItem="a3K-Uq-7dh" secondAttribute="top" id="1wt-aF-cOe"/>
+                                        <constraint firstAttribute="height" constant="45" id="7TG-Nb-zTO"/>
+                                        <constraint firstAttribute="trailing" secondItem="2BY-hF-CcC" secondAttribute="trailing" constant="10" id="GaC-si-qDx"/>
+                                        <constraint firstItem="2BY-hF-CcC" firstAttribute="leading" secondItem="a3K-Uq-7dh" secondAttribute="leading" constant="10" id="jX6-qb-QkV"/>
+                                        <constraint firstAttribute="bottom" secondItem="2BY-hF-CcC" secondAttribute="bottom" id="xkX-IS-FwR"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="backgroundCell"/>
+                            <constraints>
+                                <constraint firstItem="a3K-Uq-7dh" firstAttribute="leading" secondItem="rKH-I0-HaC" secondAttribute="leading" constant="15" id="1pT-li-oOg"/>
+                                <constraint firstAttribute="trailing" secondItem="a3K-Uq-7dh" secondAttribute="trailing" constant="15" id="91F-tl-5FJ"/>
+                                <constraint firstAttribute="trailing" secondItem="uZP-Og-U8b" secondAttribute="trailing" id="AoU-z3-2oE"/>
+                                <constraint firstItem="uZP-Og-U8b" firstAttribute="top" secondItem="rKH-I0-HaC" secondAttribute="top" constant="5" id="RrO-uX-jsS"/>
+                                <constraint firstItem="uZP-Og-U8b" firstAttribute="leading" secondItem="rKH-I0-HaC" secondAttribute="leading" id="bfo-rR-nWH"/>
+                                <constraint firstAttribute="bottom" secondItem="a3K-Uq-7dh" secondAttribute="bottom" constant="5" id="mPr-jl-das"/>
+                                <constraint firstItem="a3K-Uq-7dh" firstAttribute="top" secondItem="uZP-Og-U8b" secondAttribute="bottom" constant="5" id="mZD-ch-bkb"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="backgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="rKH-I0-HaC" firstAttribute="top" secondItem="o1M-hc-MUu" secondAttribute="top" constant="5" id="Wl8-PF-9Qe"/>
+                        <constraint firstItem="rKH-I0-HaC" firstAttribute="leading" secondItem="o1M-hc-MUu" secondAttribute="leading" constant="15" id="XjX-EB-hDw"/>
+                        <constraint firstAttribute="trailing" secondItem="rKH-I0-HaC" secondAttribute="trailing" constant="15" id="YmB-P4-WDX"/>
+                        <constraint firstAttribute="bottom" secondItem="rKH-I0-HaC" secondAttribute="bottom" constant="5" id="wsA-eB-KOb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="o1M-hc-MUu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="8Ch-Cp-VPV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="o1M-hc-MUu" secondAttribute="bottom" constant="5" id="E6I-Vg-Czp"/>
+                <constraint firstItem="o1M-hc-MUu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="aXo-9a-Ce0"/>
+                <constraint firstItem="o1M-hc-MUu" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-10" id="wzM-cB-eFb"/>
+            </constraints>
+            <point key="canvasLocation" x="21.739130434782609" y="90.401785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="picture" width="125" height="87.5"/>
+        <namedColor name="backgroundCell">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="1" green="0.98100000619888306" blue="0.94300001859664917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

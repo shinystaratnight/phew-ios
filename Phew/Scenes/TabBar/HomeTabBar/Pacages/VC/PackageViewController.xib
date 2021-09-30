@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TAHOMABD.TTF">
+            <string>Tahoma-Bold</string>
+        </array>
+        <array key="Tahoma Regular font.ttf">
+            <string>Tahoma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PackageViewController" customModule="Phew" customModuleProvider="target">
+            <connections>
+                <outlet property="tableview" destination="rNH-ft-Vh6" id="x1z-mU-iQN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fHm-qh-L3w">
+                    <rect key="frame" x="-7" y="64" width="428" height="313.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xTR-yM-BgL">
+                            <rect key="frame" x="169" y="0.0" width="90" height="90"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="1df-XD-5uz"/>
+                                <constraint firstAttribute="height" constant="90" id="Qwq-0s-ay3"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phew Membership special" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rU-Ye-TdA">
+                            <rect key="frame" x="119.5" y="110" width="189" height="19"/>
+                            <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="16"/>
+                            <color key="textColor" name="textColorBlack"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="features" translatesAutoresizingMaskIntoConstraints="NO" id="cd4-Yw-vvD">
+                            <rect key="frame" x="0.0" y="149" width="428" height="91.5"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show advantages of special membership" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0o-7X-K33">
+                            <rect key="frame" x="103.5" y="260.5" width="221.5" height="14"/>
+                            <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="12"/>
+                            <color key="textColor" name="LightGray"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Package" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2g-Mn-89O">
+                            <rect key="frame" x="158.5" y="294.5" width="111.5" height="19"/>
+                            <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="16"/>
+                            <color key="textColor" name="textColorBlack"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukK-f4-Ip9">
+                    <rect key="frame" x="16" y="798" width="382" height="44"/>
+                    <color key="backgroundColor" name="mainColorRed"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8Eq-go-BCI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="15"/>
+                    <state key="normal" title="Subscribe Now">
+                        <color key="titleColor" name="White"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSubscribeTapped:" destination="-1" eventType="touchUpInside" id="TGA-p0-uYX"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rNH-ft-Vh6">
+                    <rect key="frame" x="32" y="397.5" width="350" height="380.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="6Ml-Jh-Twd"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ukK-f4-Ip9" secondAttribute="trailing" constant="16" id="4Wc-Z4-E3e"/>
+                <constraint firstItem="rNH-ft-Vh6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AGh-P7-qpQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ukK-f4-Ip9" secondAttribute="bottom" constant="20" id="BPP-bY-5ys"/>
+                <constraint firstItem="ukK-f4-Ip9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="HHb-cT-RrB"/>
+                <constraint firstItem="fHm-qh-L3w" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HOC-Kq-ZDm"/>
+                <constraint firstItem="ukK-f4-Ip9" firstAttribute="top" secondItem="rNH-ft-Vh6" secondAttribute="bottom" constant="20" id="atz-eG-lCX"/>
+                <constraint firstItem="fHm-qh-L3w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="jmO-NY-wBT"/>
+                <constraint firstItem="rNH-ft-Vh6" firstAttribute="top" secondItem="fHm-qh-L3w" secondAttribute="bottom" constant="20" id="lz6-b3-25G"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="features" width="427.5" height="91.5"/>
+        <image name="logo" width="88.5" height="89"/>
+        <namedColor name="LightGray">
+            <color red="0.66699999570846558" green="0.66699999570846558" blue="0.66699999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="1" green="0.98100000619888306" blue="0.94300001859664917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColorRed">
+            <color red="0.88599997758865356" green="0.11800000071525574" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColorBlack">
+            <color red="0.39599999785423279" green="0.38400000333786011" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

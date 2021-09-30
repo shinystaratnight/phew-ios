@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TAHOMA_0.TTF">
+            <string>Tahoma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendsViewController" customModule="Phew" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="0L2-QO-88F" id="QwU-Wq-h1A"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="BackgroundViewColor" customModule="Phew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You now have 11 Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IQ-JJ-Iv3">
+                    <rect key="frame" x="37.5" y="12" width="300" height="18.5"/>
+                    <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0L2-QO-88F">
+                    <rect key="frame" x="0.0" y="46.5" width="375" height="620.5"/>
+                    <color key="backgroundColor" red="1" green="0.97647058823529409" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0L2-QO-88F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9Zh-Dw-C5F"/>
+                <constraint firstItem="4IQ-JJ-Iv3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="Emi-5X-Ww6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0L2-QO-88F" secondAttribute="bottom" id="Err-zR-Vx5"/>
+                <constraint firstItem="4IQ-JJ-Iv3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="liP-qA-eA3"/>
+                <constraint firstItem="4IQ-JJ-Iv3" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="mH2-Fz-FBW"/>
+                <constraint firstItem="0L2-QO-88F" firstAttribute="top" secondItem="4IQ-JJ-Iv3" secondAttribute="bottom" constant="16" id="mUj-fW-b8e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0L2-QO-88F" secondAttribute="trailing" id="mnr-qu-38z"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="142"/>
+        </view>
+    </objects>
+</document>

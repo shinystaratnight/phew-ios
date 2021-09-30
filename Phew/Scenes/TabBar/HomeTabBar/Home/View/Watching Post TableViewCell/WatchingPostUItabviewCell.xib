@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tahoma-Bold.ttf">
+            <string>Tahoma-Bold</string>
+        </array>
+        <array key="Tahoma-Regular.ttf">
+            <string>Tahoma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="173" id="KGk-i7-Jjw" customClass="WatchingPostUItabviewCell" customModule="Phew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zel-QL-t6T">
+                        <rect key="frame" x="5" y="5" width="475" height="116"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crush" translatesAutoresizingMaskIntoConstraints="NO" id="Kj1-aG-dTI">
+                                <rect key="frame" x="5" y="15" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2NW-2z-Rkk"/>
+                                    <constraint firstAttribute="width" constant="50" id="MSK-7k-4UG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="textColorBlack"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watching" translatesAutoresizingMaskIntoConstraints="NO" id="aga-y2-sSm">
+                                <rect key="frame" x="65" y="27.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="4ED-zC-acH"/>
+                                    <constraint firstAttribute="height" constant="25" id="KmH-iU-NOb"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gvR-xB-X4b">
+                                <rect key="frame" x="95" y="20" width="128" height="18.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Negoo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="321-a9-QIh">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaW-bm-Ej2">
+                                        <rect key="frame" x="48" y="0.0" width="41.5" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="15"/>
+                                        <color key="textColor" red="0.58865402919999998" green="0.081366630869999998" blue="0.052030304719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filsm " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lqb-sG-nsZ">
+                                        <rect key="frame" x="91.5" y="0.0" width="36.5" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LHl-1P-UcI">
+                                <rect key="frame" x="95" y="38.5" width="231" height="20"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="YIP-s0-ah2">
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="20"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Jtd-Iu-LFY">
+                                                <rect key="frame" x="0.0" y="0.0" width="157" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="with" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI0-C9-x3R">
+                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mt-2h-r7r">
+                                                        <rect key="frame" x="30" y="0.0" width="46" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="VQP-QB-7K3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="13"/>
+                                                        <state key="normal" title="Ahmed">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnFirstFriendTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ldy-Ny-jHJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Vo1-af-aKC">
+                                                        <rect key="frame" x="78" y="0.0" width="79" height="20"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc4-Zl-Flu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="25" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bII-y0-XPc">
+                                                                <rect key="frame" x="27" y="0.0" width="52" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="12"/>
+                                                                <state key="normal" title="10 other">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="btnShowAllFriendTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="apg-Q5-5h0"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scienc 4 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuH-QZ-dZs">
+                                                <rect key="frame" x="159" y="3" width="72" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="12"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f1J-sR-EC1">
+                                <rect key="frame" x="438" y="10" width="32" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcT-fR-AFQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="22"/>
+                                        <state key="normal" image="menu"/>
+                                        <connections>
+                                            <action selector="btnShowPostTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hGU-Sm-DyQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-2v-GhK">
+                                        <rect key="frame" x="0.0" y="22" width="32" height="32"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" image="star_post"/>
+                                        <connections>
+                                            <action selector="btnWashlistTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Apa-AB-9Hb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0me-JP-Eme">
+                                <rect key="frame" x="372.5" y="0.0" width="60.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fO-mV-nZb">
+                                        <rect key="frame" x="0.0" y="0.0" width="25.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFh-Dm-MIA">
+                                        <rect key="frame" x="30.5" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="o1y-3N-Baa"/>
+                                            <constraint firstAttribute="width" constant="30" id="s6b-KF-U34"/>
+                                        </constraints>
+                                        <state key="normal" image="screen_profile">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnShowUsersScreenShotTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PUS-wz-lVE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kj1-aG-dTI" firstAttribute="top" secondItem="Zel-QL-t6T" secondAttribute="top" constant="15" id="29y-08-4pr"/>
+                            <constraint firstItem="gvR-xB-X4b" firstAttribute="leading" secondItem="aga-y2-sSm" secondAttribute="trailing" constant="5" id="3uW-74-LYZ"/>
+                            <constraint firstItem="gvR-xB-X4b" firstAttribute="top" secondItem="Zel-QL-t6T" secondAttribute="top" constant="20" id="9VC-lJ-ayj"/>
+                            <constraint firstItem="0me-JP-Eme" firstAttribute="top" secondItem="Zel-QL-t6T" secondAttribute="top" id="Avp-Y9-lEx"/>
+                            <constraint firstItem="aga-y2-sSm" firstAttribute="centerY" secondItem="Kj1-aG-dTI" secondAttribute="centerY" id="Gqz-3Z-AcN"/>
+                            <constraint firstItem="f1J-sR-EC1" firstAttribute="top" secondItem="Zel-QL-t6T" secondAttribute="top" constant="10" id="KKQ-Z2-gG3"/>
+                            <constraint firstItem="f1J-sR-EC1" firstAttribute="leading" secondItem="0me-JP-Eme" secondAttribute="trailing" constant="5" id="MR5-lM-gq4"/>
+                            <constraint firstAttribute="trailing" secondItem="f1J-sR-EC1" secondAttribute="trailing" constant="5" id="Tu0-ay-npj"/>
+                            <constraint firstItem="LHl-1P-UcI" firstAttribute="top" secondItem="gvR-xB-X4b" secondAttribute="bottom" id="cbP-SZ-kFf"/>
+                            <constraint firstItem="LHl-1P-UcI" firstAttribute="leading" secondItem="gvR-xB-X4b" secondAttribute="leading" id="oQV-yZ-fym"/>
+                            <constraint firstItem="aga-y2-sSm" firstAttribute="leading" secondItem="Kj1-aG-dTI" secondAttribute="trailing" constant="10" id="scT-nB-bPm"/>
+                            <constraint firstItem="Kj1-aG-dTI" firstAttribute="leading" secondItem="Zel-QL-t6T" secondAttribute="leading" constant="5" id="uGC-Ma-v16"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Zel-QL-t6T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="H0W-PV-dpV"/>
+                    <constraint firstItem="Zel-QL-t6T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="YrX-eG-d0x"/>
+                    <constraint firstAttribute="bottom" secondItem="Zel-QL-t6T" secondAttribute="bottom" constant="5" id="bGh-wt-zDn"/>
+                    <constraint firstAttribute="trailing" secondItem="Zel-QL-t6T" secondAttribute="trailing" constant="5" id="fBw-y4-OCG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnCountFriendsOutLet" destination="bII-y0-XPc" id="yOA-qN-i6f"/>
+                <outlet property="btnEditPostOutlet" destination="RcT-fR-AFQ" id="dRf-eN-XrP"/>
+                <outlet property="btnFavOutlet" destination="OWb-2v-GhK" id="quW-Tq-Y0M"/>
+                <outlet property="btnFirstFiriendNameoutlet" destination="3Mt-2h-r7r" id="2qs-VP-rOZ"/>
+                <outlet property="btnShowUserScreenshotOutlet" destination="IFh-Dm-MIA" id="QCi-hd-ftW"/>
+                <outlet property="btnWashListOutlet" destination="OWb-2v-GhK" id="5RP-LH-aiO"/>
+                <outlet property="imageUser" destination="Kj1-aG-dTI" id="kRz-a3-wqH"/>
+                <outlet property="lblCountScreenShot" destination="5fO-mV-nZb" id="ZcK-53-1we"/>
+                <outlet property="lblDate" destination="HuH-QZ-dZs" id="BPG-bL-8gw"/>
+                <outlet property="lblFileName" destination="Lqb-sG-nsZ" id="V0L-7L-b9Q"/>
+                <outlet property="lblUserName" destination="321-a9-QIh" id="KAu-sb-ipC"/>
+                <outlet property="stackMoreThanOneFrids" destination="Vo1-af-aKC" id="xL2-pe-Cmf"/>
+                <outlet property="stackOnlyYou" destination="Jtd-Iu-LFY" id="7vS-V5-AEo"/>
+            </connections>
+            <point key="canvasLocation" x="-109.42028985507247" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="crush" width="1920" height="1080"/>
+        <image name="menu" width="17" height="4"/>
+        <image name="screen_profile" width="21.5" height="13.5"/>
+        <image name="star_post" width="22" height="21"/>
+        <image name="watching" width="23" height="22.5"/>
+        <namedColor name="textColorBlack">
+            <color red="0.39599999785423279" green="0.38400000333786011" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

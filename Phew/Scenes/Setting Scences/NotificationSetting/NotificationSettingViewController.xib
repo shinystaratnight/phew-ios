@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TAHOMAB0.TTF">
+            <string>Tahoma-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationSettingViewController" customModule="Phew" customModuleProvider="target">
+            <connections>
+                <outlet property="newFollowersLbl" destination="llF-hd-nzE" id="b8p-DY-5Kl"/>
+                <outlet property="notificationLbl" destination="nsI-S0-Vx2" id="XZI-cX-OFr"/>
+                <outlet property="signalLbl" destination="6at-dQ-HJK" id="0zk-85-Kzd"/>
+                <outlet property="switchAllNotification" destination="LgI-b4-iD2" id="C7C-ap-G0q"/>
+                <outlet property="switchMenstions" destination="8Fo-Qp-zgE" id="HaG-wj-ydw"/>
+                <outlet property="switchNewFollwers" destination="BMp-s6-Nbl" id="kbG-8T-zHz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="BackgroundViewColor" customModule="Phew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqJ-aY-PaO" customClass="ViewShaow" customModule="Phew" customModuleProvider="target">
+                    <rect key="frame" x="8" y="16" width="359" height="160"/>
+                    <subviews>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgI-b4-iD2">
+                            <rect key="frame" x="302" y="5" width="51" height="31"/>
+                            <connections>
+                                <action selector="allNotificationSwitchBtn:" destination="-1" eventType="valueChanged" id="4vf-ID-b1v"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsI-S0-Vx2">
+                            <rect key="frame" x="16" y="12" width="274" height="17"/>
+                            <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="14"/>
+                            <color key="textColor" red="0.8862745098" green="0.1176470588" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMp-s6-Nbl">
+                            <rect key="frame" x="302" y="48.5" width="51" height="31"/>
+                            <connections>
+                                <action selector="newFollowersSwitchBtn:" destination="-1" eventType="valueChanged" id="1y4-E8-8Ue"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llF-hd-nzE">
+                            <rect key="frame" x="16" y="56" width="274" height="16"/>
+                            <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="13"/>
+                            <color key="textColor" red="0.8862745098" green="0.1176470588" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Fo-Qp-zgE">
+                            <rect key="frame" x="302" y="82.5" width="51" height="31"/>
+                            <connections>
+                                <action selector="signalSwitchBtn:" destination="-1" eventType="valueChanged" id="ZrN-Jj-Vl2"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6at-dQ-HJK">
+                            <rect key="frame" x="16" y="90" width="274" height="16"/>
+                            <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="13"/>
+                            <color key="textColor" red="0.8862745098" green="0.1176470588" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxc-If-S5c">
+                            <rect key="frame" x="0.0" y="37" width="359" height="1"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.80000000000000004" id="FZB-40-Fgq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="backgroundCell"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="8Fo-Qp-zgE" secondAttribute="trailing" constant="8" id="29S-8D-lcP"/>
+                        <constraint firstItem="nsI-S0-Vx2" firstAttribute="top" secondItem="uqJ-aY-PaO" secondAttribute="top" constant="12" id="2rq-5c-9C1"/>
+                        <constraint firstAttribute="height" constant="160" id="3ku-lG-iOz"/>
+                        <constraint firstItem="mxc-If-S5c" firstAttribute="centerX" secondItem="uqJ-aY-PaO" secondAttribute="centerX" id="Cny-R8-Mc5"/>
+                        <constraint firstItem="8Fo-Qp-zgE" firstAttribute="centerY" secondItem="6at-dQ-HJK" secondAttribute="centerY" id="DJO-vD-afP"/>
+                        <constraint firstAttribute="trailing" secondItem="BMp-s6-Nbl" secondAttribute="trailing" constant="8" id="DNh-AT-wM4"/>
+                        <constraint firstItem="nsI-S0-Vx2" firstAttribute="leading" secondItem="uqJ-aY-PaO" secondAttribute="leading" constant="16" id="IrP-hN-1lC"/>
+                        <constraint firstItem="8Fo-Qp-zgE" firstAttribute="leading" secondItem="6at-dQ-HJK" secondAttribute="trailing" constant="12" id="L9u-Yc-cGs"/>
+                        <constraint firstItem="BMp-s6-Nbl" firstAttribute="leading" secondItem="llF-hd-nzE" secondAttribute="trailing" constant="12" id="QlH-Il-3dx"/>
+                        <constraint firstItem="BMp-s6-Nbl" firstAttribute="centerY" secondItem="llF-hd-nzE" secondAttribute="centerY" id="SOO-Id-Cbv"/>
+                        <constraint firstItem="mxc-If-S5c" firstAttribute="width" secondItem="uqJ-aY-PaO" secondAttribute="width" id="UkO-dq-W5x"/>
+                        <constraint firstItem="llF-hd-nzE" firstAttribute="top" secondItem="mxc-If-S5c" secondAttribute="bottom" constant="18" id="bz0-pC-YcN"/>
+                        <constraint firstItem="llF-hd-nzE" firstAttribute="leading" secondItem="uqJ-aY-PaO" secondAttribute="leading" constant="16" id="cgk-8S-Vp8"/>
+                        <constraint firstItem="mxc-If-S5c" firstAttribute="top" secondItem="nsI-S0-Vx2" secondAttribute="bottom" constant="8" id="dEt-ko-iS9"/>
+                        <constraint firstItem="6at-dQ-HJK" firstAttribute="top" secondItem="llF-hd-nzE" secondAttribute="bottom" constant="18" id="fZQ-l8-gCp"/>
+                        <constraint firstItem="LgI-b4-iD2" firstAttribute="centerY" secondItem="nsI-S0-Vx2" secondAttribute="centerY" id="jpK-Aa-sXr"/>
+                        <constraint firstAttribute="trailing" secondItem="LgI-b4-iD2" secondAttribute="trailing" constant="8" id="mZx-mc-gxq"/>
+                        <constraint firstItem="6at-dQ-HJK" firstAttribute="leading" secondItem="uqJ-aY-PaO" secondAttribute="leading" constant="16" id="vMG-1p-5cm"/>
+                        <constraint firstItem="LgI-b4-iD2" firstAttribute="leading" secondItem="nsI-S0-Vx2" secondAttribute="trailing" constant="12" id="whm-nh-mJM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uqJ-aY-PaO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Mso-x5-nw1"/>
+                <constraint firstItem="uqJ-aY-PaO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.957333" id="OkB-59-StW"/>
+                <constraint firstItem="uqJ-aY-PaO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oeZ-fl-jUp"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="144.3778110944528"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="backgroundCell">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

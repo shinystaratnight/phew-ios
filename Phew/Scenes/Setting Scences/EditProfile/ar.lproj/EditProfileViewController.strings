@@ -1,0 +1,21 @@
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "Wg3-lO-hn8"; */
+"Wg3-lO-hn8.placeholder" = "رقم الجوال";
+
+/* Class = "UIButton"; normalTitle = "E"; ObjectID = "az0-y8-URI"; */
+"az0-y8-URI.normalTitle" = "E";
+
+/* Class = "UILabel"; text = "Mohamed Akl"; ObjectID = "giP-pU-6oi"; */
+"giP-pU-6oi.text" = "Mohamed Akl";
+
+/* Class = "UIButton"; normalTitle = "Save Edits"; ObjectID = "hHu-dj-TkT"; */
+"hHu-dj-TkT.normalTitle" = "حفظ التعديلات";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "nHI-uV-71x"; */
+"nHI-uV-71x.placeholder" = "اسم المستخدم كاملا";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "p35-VR-wtu"; */
+"p35-VR-wtu.placeholder" = "البريد الإلكترونى";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "yeC-3c-cZV"; */
+"yeC-3c-cZV.placeholder" = "كلمة المرور";

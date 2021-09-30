@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SegmentViewController" customModule="Phew" customModuleProvider="target">
+            <connections>
+                <outlet property="loginBtn" destination="bYB-7Y-KEp" id="ebO-V1-ZzF"/>
+                <outlet property="logoImageView" destination="T6D-dT-3UT" id="YGY-KN-PBz"/>
+                <outlet property="registerBtn" destination="VDT-1u-H7O" id="bMt-VV-sNg"/>
+                <outlet property="view" destination="kk4-5U-g5E" id="AEA-7g-lRj"/>
+                <outlet property="viewLogin" destination="nsm-5u-fJ2" id="s5V-3n-6f5"/>
+                <outlet property="viewRegister" destination="NKl-NK-J0D" id="eR9-4q-CRX"/>
+                <outlet property="views" destination="uId-br-iie" id="Sq4-Hc-Lg6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kk4-5U-g5E">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QqS-jY-EQc">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="T6D-dT-3UT">
+                    <rect key="frame" x="151" y="44" width="88" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88.939999999999998" id="R86-xF-bWY"/>
+                        <constraint firstAttribute="width" constant="88.239999999999995" id="yCa-jj-bgs"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Gb-pl-D7G">
+                    <rect key="frame" x="0.0" y="176" width="390" height="45"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-1s-GX3">
+                            <rect key="frame" x="0.0" y="0.0" width="185" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDT-1u-H7O">
+                                    <rect key="frame" x="0.0" y="0.0" width="185" height="44"/>
+                                    <color key="backgroundColor" name="backgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="OxD-ZY-u9O"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                    <state key="normal" title="Register"/>
+                                    <connections>
+                                        <action selector="registerTapped:" destination="-1" eventType="touchUpInside" id="7zr-tg-Gmi"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKl-NK-J0D">
+                                    <rect key="frame" x="0.0" y="44" width="185" height="1"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="X7M-xo-RzY"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F1S-6V-3RJ">
+                            <rect key="frame" x="205" y="0.0" width="185" height="45"/>
+                            <subviews>
+                                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYB-7Y-KEp">
+                                    <rect key="frame" x="0.0" y="0.0" width="185" height="44"/>
+                                    <color key="backgroundColor" name="backgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="NDq-8v-noj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                    <state key="normal" title="Login"/>
+                                    <connections>
+                                        <action selector="loginTapped:" destination="-1" eventType="touchUpInside" id="KsO-w9-04v"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsm-5u-fJ2">
+                                    <rect key="frame" x="0.0" y="44" width="185" height="1"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="AxR-dW-oki"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uId-br-iie">
+                    <rect key="frame" x="0.0" y="221" width="390" height="589"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Rwo-aR-vse"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="QqS-jY-EQc" firstAttribute="top" secondItem="kk4-5U-g5E" secondAttribute="top" id="1mk-Ae-Pik"/>
+                <constraint firstItem="QqS-jY-EQc" firstAttribute="leading" secondItem="kk4-5U-g5E" secondAttribute="leading" id="4At-va-Vn9"/>
+                <constraint firstItem="uId-br-iie" firstAttribute="leading" secondItem="Rwo-aR-vse" secondAttribute="leading" id="5vp-Ob-4kO"/>
+                <constraint firstItem="5Gb-pl-D7G" firstAttribute="centerX" secondItem="Rwo-aR-vse" secondAttribute="centerX" id="96O-7v-VDW"/>
+                <constraint firstItem="uId-br-iie" firstAttribute="top" secondItem="5Gb-pl-D7G" secondAttribute="bottom" id="DDB-Ax-ull"/>
+                <constraint firstAttribute="bottom" secondItem="QqS-jY-EQc" secondAttribute="bottom" id="Hze-49-2aJ"/>
+                <constraint firstItem="Rwo-aR-vse" firstAttribute="trailing" secondItem="uId-br-iie" secondAttribute="trailing" id="LmR-Ch-ViC"/>
+                <constraint firstAttribute="trailing" secondItem="QqS-jY-EQc" secondAttribute="trailing" id="P1K-9U-gfH"/>
+                <constraint firstItem="5Gb-pl-D7G" firstAttribute="leading" secondItem="Rwo-aR-vse" secondAttribute="leading" id="Ppf-KZ-wpo"/>
+                <constraint firstItem="5Gb-pl-D7G" firstAttribute="top" secondItem="T6D-dT-3UT" secondAttribute="bottom" constant="43" id="Rl9-Hb-n6S"/>
+                <constraint firstItem="T6D-dT-3UT" firstAttribute="centerX" secondItem="Rwo-aR-vse" secondAttribute="centerX" id="S6i-cy-SR1"/>
+                <constraint firstItem="Rwo-aR-vse" firstAttribute="bottom" secondItem="uId-br-iie" secondAttribute="bottom" id="eLf-zO-BOx"/>
+                <constraint firstItem="T6D-dT-3UT" firstAttribute="top" secondItem="kk4-5U-g5E" secondAttribute="top" constant="44" id="wHH-WQ-hVy"/>
+                <constraint firstItem="Rwo-aR-vse" firstAttribute="trailing" secondItem="5Gb-pl-D7G" secondAttribute="trailing" id="yf4-MY-F8B"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginBackground" width="375" height="812"/>
+        <image name="logo" width="88.333335876464844" height="89"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="0.98100000619888306" blue="0.94300001859664917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

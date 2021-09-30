@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomeViewController" customModule="Phew" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAllPostsOutlet" destination="Yvz-Si-dIe" id="Ghz-Z3-cVT"/>
+                <outlet property="btnFriendsOutlet" destination="txC-MB-YPH" id="IKk-Ne-ezA"/>
+                <outlet property="tableView" destination="5yv-Ck-zvb" id="ltk-Go-8vy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHomeButtons" destination="bnB-yD-aCg" id="CyX-cN-hFX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E2X-zD-k2s">
+                    <rect key="frame" x="10" y="44" width="394" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnB-yD-aCg">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SuP-ml-jSA">
+                                    <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txC-MB-YPH">
+                                            <rect key="frame" x="0.0" y="0.0" width="197" height="33"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                            <color key="tintColor" name="mainColorGreen"/>
+                                            <state key="normal" image="friends-in">
+                                                <color key="titleColor" name="mainColorGreen"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnFriendsTapped:" destination="-1" eventType="touchUpInside" id="Oud-PV-Mrp"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvz-Si-dIe">
+                                            <rect key="frame" x="197" y="0.0" width="197" height="33"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                            <color key="tintColor" name="mainColorRed"/>
+                                            <state key="normal" image="friends">
+                                                <color key="titleColor" name="mainColorRed"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnAllPostsTapped:" destination="-1" eventType="touchUpInside" id="JRb-hg-rdb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="txC-MB-YPH" firstAttribute="height" secondItem="SuP-ml-jSA" secondAttribute="height" id="Cd7-fm-j4Q"/>
+                                        <constraint firstItem="Yvz-Si-dIe" firstAttribute="height" secondItem="SuP-ml-jSA" secondAttribute="height" id="GOz-nL-4vq"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="backgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="SuP-ml-jSA" firstAttribute="height" secondItem="bnB-yD-aCg" secondAttribute="height" id="5Zy-rc-KuT"/>
+                                <constraint firstItem="SuP-ml-jSA" firstAttribute="width" secondItem="bnB-yD-aCg" secondAttribute="width" id="VM1-xc-hwY"/>
+                                <constraint firstItem="SuP-ml-jSA" firstAttribute="centerX" secondItem="bnB-yD-aCg" secondAttribute="centerX" id="WQ1-dn-TPf"/>
+                                <constraint firstItem="SuP-ml-jSA" firstAttribute="top" secondItem="bnB-yD-aCg" secondAttribute="top" id="gPE-a3-zcc"/>
+                                <constraint firstAttribute="height" constant="33" id="s5r-Y2-XzS"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5yv-Ck-zvb">
+                            <rect key="frame" x="0.0" y="33" width="394" height="785"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="E2X-zD-k2s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UyA-d5-74G"/>
+                <constraint firstItem="E2X-zD-k2s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="gzs-Cq-WoH"/>
+                <constraint firstItem="E2X-zD-k2s" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-10" id="tcd-7h-PBQ"/>
+                <constraint firstItem="E2X-zD-k2s" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="yLf-G4-9dn"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="98.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="friends" width="34" height="34"/>
+        <image name="friends-in" width="32.5" height="33"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="0.98100000619888306" blue="0.94300001859664917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColorGreen">
+            <color red="0.046999998390674591" green="0.82400000095367432" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColorRed">
+            <color red="0.88599997758865356" green="0.11800000071525574" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tahoma-Regular.ttf">
+            <string>Tahoma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="299" id="KGk-i7-Jjw" customClass="UserInformationHeaderTableViewCell" customModule="Phew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="752" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="752" height="260"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain-scenery-1450082-2" translatesAutoresizingMaskIntoConstraints="NO" id="mvI-cv-aNg">
+                        <rect key="frame" x="0.0" y="0.0" width="752" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="9US-N3-D0I"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rmdan" translatesAutoresizingMaskIntoConstraints="NO" id="NG7-xr-K43">
+                        <rect key="frame" x="336" y="65" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="P3w-xC-wZ8"/>
+                            <constraint firstAttribute="height" constant="80" id="ues-Ru-mc1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7n3-1E-7Y9">
+                        <rect key="frame" x="436" y="90" width="49" height="20"/>
+                        <color key="backgroundColor" red="0.93121889619999998" green="0.93121889619999998" blue="0.93121889619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Elu-dB-pt5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <state key="normal" title="Follow">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="btnFollowFriendTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AEl-Hb-Can"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="iom-n2-Mig">
+                        <rect key="frame" x="674" y="135" width="53" height="64"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="miI-BE-ges">
+                                <rect key="frame" x="11.5" y="0.0" width="30" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1664" translatesAutoresizingMaskIntoConstraints="NO" id="ogq-eo-WdX">
+                                        <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Pdt-G1-uhV"/>
+                                            <constraint firstAttribute="width" constant="20" id="QSy-FL-GvN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99658936259999997" green="0.97709196809999999" blue="0.93932658430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ogq-eo-WdX" firstAttribute="centerY" secondItem="miI-BE-ges" secondAttribute="centerY" id="5Mq-8Q-m3e"/>
+                                    <constraint firstItem="ogq-eo-WdX" firstAttribute="centerX" secondItem="miI-BE-ges" secondAttribute="centerX" id="M7j-6g-Wli"/>
+                                    <constraint firstAttribute="width" constant="30" id="Q1S-2r-rcs"/>
+                                    <constraint firstAttribute="height" constant="30" id="jYe-zd-04V"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-uk-TA1">
+                                <rect key="frame" x="15.5" y="32" width="22" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="vh1-HH-9hg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followeing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBP-b0-7i4">
+                                <rect key="frame" x="0.0" y="49" width="53" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Yx7-1g-mp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2zB-NC-WfR">
+                        <rect key="frame" x="25" y="135" width="60" height="70"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OoU-Ap-6uE">
+                                <rect key="frame" x="15" y="0.0" width="30" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZE-5r-l2e">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1630" translatesAutoresizingMaskIntoConstraints="NO" id="na1-2j-CXR">
+                                                <rect key="frame" x="7.5" y="7.5" width="15" height="15"/>
+                                                <color key="tintColor" red="0.99658936259999997" green="0.97709196809999999" blue="0.93932658430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="euY-Cy-L5C"/>
+                                                    <constraint firstAttribute="width" constant="15" id="zcJ-g4-SMc"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstItem="na1-2j-CXR" firstAttribute="centerY" secondItem="nZE-5r-l2e" secondAttribute="centerY" id="6cD-sV-c7y"/>
+                                            <constraint firstAttribute="width" constant="30" id="8eh-va-pRQ"/>
+                                            <constraint firstItem="na1-2j-CXR" firstAttribute="centerX" secondItem="nZE-5r-l2e" secondAttribute="centerX" id="bai-gI-q3X"/>
+                                            <constraint firstAttribute="height" constant="30" id="tTR-X5-Pwg"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOi-bm-MrN">
+                                        <rect key="frame" x="4" y="30" width="22" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="ur4-A3-1qN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UT-nv-R5R">
+                                <rect key="frame" x="0.0" y="45" width="60" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="MDs-eo-iED"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="11"/>
+                                <state key="normal" title="Friends">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFriendsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EkV-O7-V6v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="ACk-WE-TeR">
+                        <rect key="frame" x="276" y="145" width="200" height="68.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="crm-E2-g72">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="68.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verified" translatesAutoresizingMaskIntoConstraints="NO" id="FqJ-2J-yNn">
+                                        <rect key="frame" x="12" y="0.0" width="26.5" height="28.5"/>
+                                        <color key="tintColor" red="0.99658936259999997" green="0.97709196809999999" blue="0.93932658430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmE-12-Tcj">
+                                        <rect key="frame" x="14" y="33.5" width="22" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="eSr-5G-Gur"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkS-Jp-dVw">
+                                        <rect key="frame" x="11" y="53.5" width="28" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="9LA-CJ-z0E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="11"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmed Negoo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mh-4r-yP3">
+                                <rect key="frame" x="45" y="0.0" width="100" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KUI-BB-QZv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pVd-y4-K7o">
+                                <rect key="frame" x="140" y="0.0" width="60" height="68.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="premium" translatesAutoresizingMaskIntoConstraints="NO" id="DZ0-4z-5ra">
+                                        <rect key="frame" x="17" y="0.0" width="26.5" height="28.5"/>
+                                        <color key="tintColor" red="0.99658936259999997" green="0.97709196809999999" blue="0.93932658430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJL-ah-WW9">
+                                        <rect key="frame" x="19" y="33.5" width="22" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="9b3-xE-t3n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-Zb-oLu">
+                                        <rect key="frame" x="6.5" y="53.5" width="47.5" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="Yj9-4H-PTz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="11"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="xDw-kJ-Ep6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="FNJ-rz-bNF"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="QSm-zX-RDo">
+                        <rect key="frame" x="10" y="225" width="732" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGn-PO-nVA">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="UwT-Qd-Y40"/>
+                                    <constraint firstAttribute="height" constant="30" id="szy-Jk-4qY"/>
+                                </constraints>
+                                <color key="tintColor" red="0.88440269230000002" green="0.1165064052" blue="0.17294833060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="friends"/>
+                                <connections>
+                                    <action selector="btnNormalTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2pH-ld-LmI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOb-eD-A02">
+                                <rect key="frame" x="234" y="0.0" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GDC-cp-Lec"/>
+                                    <constraint firstAttribute="width" constant="30" id="tMm-bO-10D"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="Path 1780"/>
+                                <connections>
+                                    <action selector="btnLocationTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZqW-CA-eq8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dj-zr-yfO">
+                                <rect key="frame" x="468" y="0.0" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="p8x-Kd-piW"/>
+                                    <constraint firstAttribute="height" constant="30" id="vEW-jo-S9K"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="Group 1628"/>
+                                <connections>
+                                    <action selector="btnWatchingTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qrm-9K-sRO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1P-qz-Sac">
+                                <rect key="frame" x="702" y="0.0" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="C1r-ma-188"/>
+                                    <constraint firstAttribute="height" constant="30" id="XMz-GR-eUg"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="Path 1759"/>
+                                <connections>
+                                    <action selector="btnFavouritTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="y9u-W3-dPS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LzO-ZO-era">
+                        <rect key="frame" x="18" y="75" width="308" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMY-jo-Gp5">
+                                <rect key="frame" x="0.0" y="12" width="55" height="26"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Accept ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnAccetpfrined:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dsx-p9-N0D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHd-Eu-1co">
+                                <rect key="frame" x="60" y="12" width="60" height="26"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Unfriend">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnUnFriend:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ymP-PR-nni"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjv-NT-pPW">
+                                <rect key="frame" x="125" y="12" width="51" height="26"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnCancelFriend:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GPy-Za-M5e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-SK-FnU">
+                                <rect key="frame" x="181" y="12" width="47" height="26"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Reject">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnRejectFriend:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="efy-lY-qhQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-I2-cZ3">
+                                <rect key="frame" x="233" y="15" width="75" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="mWA-Cy-scK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Add Friend">
+                                    <color key="titleColor" red="0.95308993050000002" green="0.95308993050000002" blue="0.95308993050000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnAddFriendTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rVm-pP-HGN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" name="backgroundCell"/>
+                <constraints>
+                    <constraint firstItem="ACk-WE-TeR" firstAttribute="top" secondItem="NG7-xr-K43" secondAttribute="bottom" id="4Sf-e8-F61"/>
+                    <constraint firstAttribute="bottom" secondItem="QSm-zX-RDo" secondAttribute="bottom" constant="5" id="4a3-G5-ZjV"/>
+                    <constraint firstItem="ACk-WE-TeR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ISZ-OZ-6qA"/>
+                    <constraint firstItem="2zB-NC-WfR" firstAttribute="top" secondItem="mvI-cv-aNg" secondAttribute="bottom" constant="15" id="JYR-rv-HY6"/>
+                    <constraint firstItem="iom-n2-Mig" firstAttribute="top" secondItem="mvI-cv-aNg" secondAttribute="bottom" constant="15" id="Lal-tw-flb"/>
+                    <constraint firstItem="QSm-zX-RDo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RCT-6y-wV4"/>
+                    <constraint firstItem="NG7-xr-K43" firstAttribute="leading" secondItem="LzO-ZO-era" secondAttribute="trailing" constant="10" id="UKh-WI-7BI"/>
+                    <constraint firstItem="mvI-cv-aNg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Xob-g2-3mg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iom-n2-Mig" secondAttribute="trailing" constant="5" id="Xw4-IV-yuX"/>
+                    <constraint firstItem="mvI-cv-aNg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YJT-vE-pXw"/>
+                    <constraint firstItem="2zB-NC-WfR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="dFy-Ml-OQf"/>
+                    <constraint firstItem="NG7-xr-K43" firstAttribute="centerY" secondItem="mvI-cv-aNg" secondAttribute="bottom" constant="-15" id="dcM-i0-Cvi"/>
+                    <constraint firstItem="NG7-xr-K43" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="kbZ-Vm-29d"/>
+                    <constraint firstAttribute="trailing" secondItem="QSm-zX-RDo" secondAttribute="trailing" constant="10" id="pEy-fJ-kfl"/>
+                    <constraint firstItem="7n3-1E-7Y9" firstAttribute="leading" secondItem="NG7-xr-K43" secondAttribute="trailing" constant="20" id="tWq-Xr-POn"/>
+                    <constraint firstItem="2zB-NC-WfR" firstAttribute="top" secondItem="LzO-ZO-era" secondAttribute="bottom" constant="10" id="w2c-Z2-d2Z"/>
+                    <constraint firstItem="LzO-ZO-era" firstAttribute="centerY" secondItem="NG7-xr-K43" secondAttribute="centerY" constant="-5" id="yD6-0k-fyU"/>
+                    <constraint firstAttribute="trailing" secondItem="mvI-cv-aNg" secondAttribute="trailing" id="zw3-eJ-fi0"/>
+                    <constraint firstItem="7n3-1E-7Y9" firstAttribute="bottom" secondItem="mvI-cv-aNg" secondAttribute="bottom" constant="-10" id="zw4-Gm-khl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnAcceptFriendOutLet" destination="wMY-jo-Gp5" id="rw2-Qh-kN7"/>
+                <outlet property="btnAddFriendOutlet" destination="vAY-I2-cZ3" id="ngd-BN-eUB"/>
+                <outlet property="btnCancelFirendOutlet" destination="Xjv-NT-pPW" id="jhZ-Jg-LFW"/>
+                <outlet property="btnFavOutlet" destination="E1P-qz-Sac" id="EJd-1e-wTs"/>
+                <outlet property="btnFollowOutlet" destination="7n3-1E-7Y9" id="sA2-Mv-zQB"/>
+                <outlet property="btnFriendsOutlet" destination="3UT-nv-R5R" id="9zn-8Q-06N"/>
+                <outlet property="btnLocationOutlet" destination="xOb-eD-A02" id="gRc-2d-oey"/>
+                <outlet property="btnNormalOutlet" destination="aGn-PO-nVA" id="by4-ea-MR8"/>
+                <outlet property="btnRejectFriendOutlet" destination="ddf-SK-FnU" id="AoN-JI-IkF"/>
+                <outlet property="btnUnfriendOutlet" destination="fHd-Eu-1co" id="NRE-Dv-OUK"/>
+                <outlet property="btnWatchingOutlet" destination="5dj-zr-yfO" id="hFc-i6-c5v"/>
+                <outlet property="imageBackground" destination="mvI-cv-aNg" id="RGW-88-nMD"/>
+                <outlet property="imagePermium" destination="DZ0-4z-5ra" id="Gkd-nP-1yb"/>
+                <outlet property="imageProfile" destination="NG7-xr-K43" id="JIv-03-ifM"/>
+                <outlet property="imageVerified" destination="FqJ-2J-yNn" id="Jr0-hx-n3v"/>
+                <outlet property="lblName" destination="6mh-4r-yP3" id="WQ1-vh-uJW"/>
+                <outlet property="lblNumberFollower" destination="wJL-ah-WW9" id="59U-sm-9Zk"/>
+                <outlet property="lblNumberFollwing" destination="sWD-uk-TA1" id="be1-Hz-mnB"/>
+                <outlet property="lblNumberFriends" destination="YOi-bm-MrN" id="yh7-0z-cKU"/>
+                <outlet property="lblNumberPosts" destination="cmE-12-Tcj" id="rM9-WD-cO7"/>
+                <outlet property="stackMessages" destination="OoU-Ap-6uE" id="hrh-pm-3Js"/>
+                <outlet property="stackQuestions" destination="iom-n2-Mig" id="7tp-Px-e0L"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="188.83928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 1628" width="59" height="59.5"/>
+        <image name="Group 1630" width="62.5" height="61"/>
+        <image name="Group 1664" width="62.5" height="61"/>
+        <image name="Path 1759" width="63.5" height="61"/>
+        <image name="Path 1780" width="43" height="60"/>
+        <image name="friends" width="34" height="34"/>
+        <image name="mountain-scenery-1450082-2" width="1125" height="546"/>
+        <image name="premium" width="26.5" height="28.5"/>
+        <image name="rmdan" width="800" height="542"/>
+        <image name="verified" width="26.5" height="28.5"/>
+        <namedColor name="backgroundCell">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

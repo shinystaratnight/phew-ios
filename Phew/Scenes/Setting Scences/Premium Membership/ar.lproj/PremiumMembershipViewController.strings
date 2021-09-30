@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Delete followers and friends"; ObjectID = "35h-Ux-Gut"; */
+"35h-Ux-Gut.text" = "حذف المتابعين الأصدقاء";
+
+/* Class = "UILabel"; text = "Messages"; ObjectID = "ZM7-Hf-rvE"; */
+"ZM7-Hf-rvE.text" = "الرسائل";
+
+/* Class = "UILabel"; text = "Inactive for 60 days"; ObjectID = "qaP-bA-DNs"; */
+"qaP-bA-DNs.text" = "الغير نشطين لمدة 60 يوم";

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TAHOMA_0.TTF">
+            <string>Tahoma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditPostViewController" customModule="Phew" customModuleProvider="target">
+            <connections>
+                <outlet property="btnPostOutlet" destination="pWf-EF-VSO" id="dSE-ek-ANX"/>
+                <outlet property="txtPost" destination="csh-6z-HrT" id="IVL-UA-NoD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="BackgroundViewColor" customModule="Phew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWf-EF-VSO">
+                    <rect key="frame" x="298" y="64" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.89634847640000004" green="0.098244749009999993" blue="0.13756918909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Coj-xP-cvt"/>
+                        <constraint firstAttribute="width" constant="100" id="usF-T9-wtz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="17"/>
+                    <state key="normal" title="Update">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnUpdateTapped:" destination="-1" eventType="touchUpInside" id="hfm-Dl-lgx"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csh-6z-HrT" customClass="RSKPlaceholderTextView" customModule="Phew" customModuleProvider="target">
+                    <rect key="frame" x="16" y="114" width="382" height="728"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="csh-6z-HrT" secondAttribute="bottom" constant="20" id="2NF-C3-4ci"/>
+                <constraint firstItem="csh-6z-HrT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Kng-JM-ftO"/>
+                <constraint firstItem="csh-6z-HrT" firstAttribute="top" secondItem="pWf-EF-VSO" secondAttribute="bottom" constant="20" id="TLO-dC-eyz"/>
+                <constraint firstAttribute="trailing" secondItem="pWf-EF-VSO" secondAttribute="trailing" constant="16" id="jw0-Dg-h3e"/>
+                <constraint firstItem="pWf-EF-VSO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="jzj-Ol-B3K"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="csh-6z-HrT" secondAttribute="trailing" constant="16" id="vYA-VC-8zu"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="104"/>
+        </view>
+    </objects>
+</document>

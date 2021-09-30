@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Country"; ObjectID = "2cL-WP-wz4"; */
+"2cL-WP-wz4.normalTitle" = "الدولة";
+
+/* Class = "UILabel"; text = "Register your account information"; ObjectID = "4TY-fz-Agf"; */
+"4TY-fz-Agf.text" = "قم بتسجيل بيانات حسابك";
+
+/* Class = "UIButton"; normalTitle = "City"; ObjectID = "AQy-Hv-A0G"; */
+"AQy-Hv-A0G.normalTitle" = "المدينة";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "Goq-rm-mh8"; */
+"Goq-rm-mh8.text" = "مرحبا";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "Tan-gU-IIT"; */
+"Tan-gU-IIT.placeholder" = "رقم الجوال";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Uxi-3T-6aa"; */
+"Uxi-3T-6aa.placeholder" = "البريد الإلكترونى";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "dFe-3V-an8"; */
+"dFe-3V-an8.placeholder" = "كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "h1s-Nt-BcX"; */
+"h1s-Nt-BcX.placeholder" = "اسم المستخدم كاملا";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "iQw-je-JT0"; */
+"iQw-je-JT0.normalTitle" = "تسجيل";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "iWg-Mv-heY"; */
+"iWg-Mv-heY.placeholder" = "تأكيد كلمة المرور";

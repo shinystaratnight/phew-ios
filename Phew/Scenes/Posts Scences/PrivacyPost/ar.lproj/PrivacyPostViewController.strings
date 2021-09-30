@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "All"; ObjectID = "FIQ-zK-3IA"; */
+"FIQ-zK-3IA.text" = "الجميع";
+
+/* Class = "UILabel"; text = "Who Can See Your Post?"; ObjectID = "gZQ-g9-e7G"; */
+"gZQ-g9-e7G.text" = "من يمكن ان يشاهد منشورك؟";
+
+/* Class = "UILabel"; text = "Friends Only"; ObjectID = "zjp-YN-rSb"; */
+"zjp-YN-rSb.text" = "الأصدقاء فقط";

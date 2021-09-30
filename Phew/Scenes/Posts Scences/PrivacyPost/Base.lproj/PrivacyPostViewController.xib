@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TAHOMA_0.TTF">
+            <string>Tahoma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyPostViewController" customModule="Phew" customModuleProvider="target">
+            <connections>
+                <outlet property="allLbl" destination="FIQ-zK-3IA" id="ZxS-4V-2uT"/>
+                <outlet property="allRadioView" destination="zMY-MO-eOC" id="SI9-F8-fn8"/>
+                <outlet property="friendsLbl" destination="zjp-YN-rSb" id="BKQ-0i-c40"/>
+                <outlet property="friendsRadioView" destination="8Vr-EF-O4c" id="kKg-O1-hjV"/>
+                <outlet property="postLbl" destination="gZQ-g9-e7G" id="udw-w5-cx9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChE-Ld-6or">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="433"/>
+                    <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="17"/>
+                    <connections>
+                        <action selector="dismissBtnTapped:" destination="-1" eventType="touchUpInside" id="6Ae-z8-V9K"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDu-Hp-NAz" customClass="ViewClass" customModule="Phew" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="433" width="320" height="135"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who Can See Your Post?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZQ-g9-e7G">
+                            <rect key="frame" x="66" y="8" width="188.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="mainColorRed"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uq8-WZ-WHI">
+                            <rect key="frame" x="0.0" y="33" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Edq-7w-ATF"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends Only" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjp-YN-rSb">
+                            <rect key="frame" x="8" y="42" width="96" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="textColorBlack"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WvI-UW-HhV">
+                            <rect key="frame" x="0.0" y="82" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="1V8-Iu-1hA"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIQ-zK-3IA">
+                            <rect key="frame" x="8" y="91" width="19" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U69-pF-Yvg" customClass="CustomRadioButton" customModule="Phew" customModuleProvider="target">
+                            <rect key="frame" x="292" y="50" width="16" height="16"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="5LR-7Y-fOv"/>
+                                <constraint firstAttribute="width" constant="16" id="g0e-EA-ceJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="17"/>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Vr-EF-O4c" customClass="CircleImageView" customModule="Phew" customModuleProvider="target">
+                            <rect key="frame" x="295.5" y="53.5" width="9" height="9"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="9" id="Ecv-J4-oHO"/>
+                                <constraint firstAttribute="height" constant="9" id="WBa-yE-641"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bN0-WQ-emC" customClass="CustomRadioButton" customModule="Phew" customModuleProvider="target">
+                            <rect key="frame" x="292" y="99" width="16" height="16"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="p0M-Ro-NhA"/>
+                                <constraint firstAttribute="width" constant="16" id="yM8-Vb-IrR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="17"/>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMY-MO-eOC" customClass="CircleImageView" customModule="Phew" customModuleProvider="target">
+                            <rect key="frame" x="295.5" y="102.5" width="9" height="9"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="9" id="K1u-iG-QtT"/>
+                                <constraint firstAttribute="height" constant="9" id="dc5-iE-sYY"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBx-wF-lHI">
+                            <rect key="frame" x="8" y="42" width="300" height="32"/>
+                            <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="17"/>
+                            <connections>
+                                <action selector="friendsBtnTapped:" destination="-1" eventType="touchUpInside" id="Brd-Hl-TX8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1T-SG-aj7">
+                            <rect key="frame" x="8" y="91" width="300" height="32"/>
+                            <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="17"/>
+                            <state key="normal">
+                                <color key="titleColor" name="textColorBlack"/>
+                            </state>
+                            <connections>
+                                <action selector="allbleBtnTapped:" destination="-1" eventType="touchUpInside" id="7ef-rj-a7j"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="backgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="WvI-UW-HhV" firstAttribute="centerX" secondItem="TDu-Hp-NAz" secondAttribute="centerX" id="0gU-UJ-Kq5"/>
+                        <constraint firstItem="zjp-YN-rSb" firstAttribute="leading" secondItem="TDu-Hp-NAz" secondAttribute="leading" constant="8" id="1ma-JY-xmK"/>
+                        <constraint firstItem="zMY-MO-eOC" firstAttribute="centerX" secondItem="bN0-WQ-emC" secondAttribute="centerX" id="6zw-3V-0l1"/>
+                        <constraint firstItem="M1T-SG-aj7" firstAttribute="top" secondItem="FIQ-zK-3IA" secondAttribute="top" id="CVQ-zc-i7Q"/>
+                        <constraint firstAttribute="trailing" secondItem="bN0-WQ-emC" secondAttribute="trailing" constant="12" id="DkV-qQ-mNZ"/>
+                        <constraint firstAttribute="height" constant="135" id="EpA-fB-5Ep"/>
+                        <constraint firstItem="8Vr-EF-O4c" firstAttribute="centerY" secondItem="U69-pF-Yvg" secondAttribute="centerY" id="Fav-Sl-da0"/>
+                        <constraint firstItem="U69-pF-Yvg" firstAttribute="centerY" secondItem="zjp-YN-rSb" secondAttribute="centerY" id="HVr-be-okI"/>
+                        <constraint firstItem="bN0-WQ-emC" firstAttribute="centerY" secondItem="FIQ-zK-3IA" secondAttribute="centerY" id="Hne-uz-HIl"/>
+                        <constraint firstItem="iBx-wF-lHI" firstAttribute="bottom" secondItem="zjp-YN-rSb" secondAttribute="bottom" id="IFg-Il-jOt"/>
+                        <constraint firstItem="Uq8-WZ-WHI" firstAttribute="width" secondItem="TDu-Hp-NAz" secondAttribute="width" id="KIs-cL-M6O"/>
+                        <constraint firstItem="iBx-wF-lHI" firstAttribute="top" secondItem="zjp-YN-rSb" secondAttribute="top" id="M7T-d1-C4X"/>
+                        <constraint firstItem="Uq8-WZ-WHI" firstAttribute="centerX" secondItem="TDu-Hp-NAz" secondAttribute="centerX" id="Noo-G9-Bjz"/>
+                        <constraint firstItem="iBx-wF-lHI" firstAttribute="trailing" secondItem="U69-pF-Yvg" secondAttribute="trailing" id="O16-Hh-FHp"/>
+                        <constraint firstItem="iBx-wF-lHI" firstAttribute="leading" secondItem="zjp-YN-rSb" secondAttribute="leading" id="U2c-Ah-kFF"/>
+                        <constraint firstItem="WvI-UW-HhV" firstAttribute="top" secondItem="zjp-YN-rSb" secondAttribute="bottom" constant="8" id="V7r-hA-qZi"/>
+                        <constraint firstItem="Uq8-WZ-WHI" firstAttribute="top" secondItem="gZQ-g9-e7G" secondAttribute="bottom" constant="4" id="YDr-Rj-Len"/>
+                        <constraint firstItem="M1T-SG-aj7" firstAttribute="leading" secondItem="FIQ-zK-3IA" secondAttribute="leading" id="Ylb-le-QYK"/>
+                        <constraint firstItem="M1T-SG-aj7" firstAttribute="trailing" secondItem="bN0-WQ-emC" secondAttribute="trailing" id="bkR-B5-G2p"/>
+                        <constraint firstItem="gZQ-g9-e7G" firstAttribute="top" secondItem="TDu-Hp-NAz" secondAttribute="top" constant="8" id="c5v-qY-to5"/>
+                        <constraint firstItem="zjp-YN-rSb" firstAttribute="top" secondItem="Uq8-WZ-WHI" secondAttribute="bottom" constant="8" id="cOZ-lh-UN5"/>
+                        <constraint firstItem="M1T-SG-aj7" firstAttribute="bottom" secondItem="FIQ-zK-3IA" secondAttribute="bottom" id="cWT-nR-2DZ"/>
+                        <constraint firstItem="8Vr-EF-O4c" firstAttribute="centerX" secondItem="U69-pF-Yvg" secondAttribute="centerX" id="e9m-2M-e7t"/>
+                        <constraint firstItem="FIQ-zK-3IA" firstAttribute="leading" secondItem="TDu-Hp-NAz" secondAttribute="leading" constant="8" id="eHP-tQ-Rhs"/>
+                        <constraint firstItem="bN0-WQ-emC" firstAttribute="trailing" secondItem="U69-pF-Yvg" secondAttribute="trailing" id="kKj-q3-V1T"/>
+                        <constraint firstItem="gZQ-g9-e7G" firstAttribute="centerX" secondItem="TDu-Hp-NAz" secondAttribute="centerX" id="kW4-D5-L7f"/>
+                        <constraint firstItem="FIQ-zK-3IA" firstAttribute="top" secondItem="WvI-UW-HhV" secondAttribute="bottom" constant="8" id="pgc-an-R4i"/>
+                        <constraint firstItem="zMY-MO-eOC" firstAttribute="centerY" secondItem="bN0-WQ-emC" secondAttribute="centerY" id="r7W-en-yrg"/>
+                        <constraint firstAttribute="trailing" secondItem="U69-pF-Yvg" secondAttribute="trailing" constant="12" id="roa-5Z-kiz"/>
+                        <constraint firstItem="WvI-UW-HhV" firstAttribute="width" secondItem="TDu-Hp-NAz" secondAttribute="width" id="t8l-fi-x6e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ChE-Ld-6or" secondAttribute="trailing" id="Fr1-e5-FDd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TDu-Hp-NAz" secondAttribute="bottom" id="W7o-K4-JZE"/>
+                <constraint firstItem="ChE-Ld-6or" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aBe-oH-tj9"/>
+                <constraint firstAttribute="trailing" secondItem="TDu-Hp-NAz" secondAttribute="trailing" id="dbn-Qb-Hxg"/>
+                <constraint firstItem="ChE-Ld-6or" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fzn-vO-O4Z"/>
+                <constraint firstItem="TDu-Hp-NAz" firstAttribute="top" secondItem="ChE-Ld-6or" secondAttribute="bottom" id="huY-2l-Y5k"/>
+                <constraint firstItem="TDu-Hp-NAz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iXs-5G-hw6"/>
+            </constraints>
+            <point key="canvasLocation" x="131.25" y="144.71830985915494"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="1" green="0.98100000619888306" blue="0.94300001859664917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColorRed">
+            <color red="0.88235294117647056" green="0.11764705882352941" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColorBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

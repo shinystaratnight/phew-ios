@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Phew
+
+  Created by Mohamed Akl on 9/8/20.
+  Copyright © 2020 Mohamed Akl. All rights reserved.
+*/
+
+"City"="المدينة";
+"Please Choose Country First"="من فضلك إختر الدولة أولاً";
+
+"User Name"="";
+"Mobile Number"="";
+"Country"="";
+"code"="";
+
+"Premium Membership Setting"="إعدادات العضوية المميزة";
+"Policy"="سياسة الإستخدام";
+"About App"="نبذة عن التطبيق";
+"Contact Us"="إتصل بنا";
+"Notifications"="الإشعارات";
+
+"Create Post"="إنشاء منشور";
+"What's on your mind?"="اكتب ما تفكر به ؟";
+"Friend Request"="طلبات الصداقة";

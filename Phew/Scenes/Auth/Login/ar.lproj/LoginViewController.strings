@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "93z-cA-79B"; */
+"93z-cA-79B.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "Welcome Back"; ObjectID = "LTr-Jw-gYl"; */
+"LTr-Jw-gYl.text" = "مرحبا بعودتك";
+
+/* Class = "UILabel"; text = "Please log in to your account"; ObjectID = "WbK-Lm-6QE"; */
+"WbK-Lm-6QE.text" = "من فضلك قم بتسجيل الدخول لحسابك";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "hZY-pO-UM3"; */
+"hZY-pO-UM3.placeholder" = "كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "Email Or Mobile Number"; ObjectID = "jql-S2-sAJ"; */
+"jql-S2-sAJ.placeholder" = "البريد الإلكترونى أو رقم الجوال";
+
+/* Class = "UIButton"; normalTitle = "Forget Password?"; ObjectID = "vPG-Am-kyY"; */
+"vPG-Am-kyY.normalTitle" = "هل نسيت كلمة المرور؟";
+"gM5-fl-BwU.text" = "او";
+"Z8Y-sW-fUV.normalTitle" = "الدخول بحساب جوجل";
+

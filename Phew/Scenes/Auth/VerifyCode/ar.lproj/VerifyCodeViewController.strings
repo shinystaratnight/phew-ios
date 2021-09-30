@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "Send Code Again"; ObjectID = "4JK-Ej-LrC"; */
+"4JK-Ej-LrC.normalTitle" = "Send Code Again";
+
+/* Class = "UILabel"; text = "Enter the 4-digit code"; ObjectID = "8dy-t6-SuX"; */
+"8dy-t6-SuX.text" = "Enter the 4-digit code";
+
+/* Class = "UITextField"; placeholder = "-"; ObjectID = "B7K-xA-QDw"; */
+"B7K-xA-QDw.placeholder" = "-";
+
+/* Class = "UILabel"; text = "Your Data Has Been Successfully Registered"; ObjectID = "NCO-Si-CIw"; */
+"NCO-Si-CIw.text" = "Your Data Has Been Successfully Registered";
+
+/* Class = "UITextField"; placeholder = "-"; ObjectID = "QO9-fs-Kv8"; */
+"QO9-fs-Kv8.placeholder" = "-";
+
+/* Class = "UITextField"; placeholder = "-"; ObjectID = "QOs-D5-giG"; */
+"QOs-D5-giG.placeholder" = "-";
+
+/* Class = "UITextField"; placeholder = "-"; ObjectID = "upj-cC-bM2"; */
+"upj-cC-bM2.placeholder" = "-";
+
+/* Class = "UIButton"; normalTitle = "Active Account"; ObjectID = "vGh-lY-fdX"; */
+"vGh-lY-fdX.normalTitle" = "Active Account";
+
+/* Class = "UILabel"; text = "You Can Send Code Again After"; ObjectID = "xNm-p9-qhg"; */
+"xNm-p9-qhg.text" = "You Can Send Code Again After";

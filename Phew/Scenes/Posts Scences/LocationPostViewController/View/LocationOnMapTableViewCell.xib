@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tahoma Regular font.ttf">
+            <string>Tahoma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationOnMapTableViewCell" rowHeight="100" id="cdP-pJ-hYA" customClass="LocationOnMapTableViewCell" customModule="Phew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cdP-pJ-hYA" id="bqV-J5-yFy">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHV-IW-QmC">
+                        <rect key="frame" x="8" y="8" width="400" height="84"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-wo-lWY">
+                                <rect key="frame" x="45" y="17.5" width="343" height="49.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ماكدونالدز , المدينة , السعودية" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nq-DE-Gk7">
+                                        <rect key="frame" x="0.0" y="0.0" width="143.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يبعد عنك بـ 4,0 كم" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-s1-596">
+                                        <rect key="frame" x="0.0" y="16.5" width="72.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="11"/>
+                                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 شخص قاموا بتحديد موقعهم بالمكان" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GB-2u-web">
+                                        <rect key="frame" x="0.0" y="33" width="150" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="11"/>
+                                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 1780-1" translatesAutoresizingMaskIntoConstraints="NO" id="uwI-fE-3Lt" customClass="CircleImageView" customModule="Phew" customModuleProvider="target">
+                                <rect key="frame" x="8" y="29.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="2Qz-Zu-Sjq"/>
+                                    <constraint firstAttribute="width" constant="25" id="Dae-nz-ksQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="backgroundCell"/>
+                        <constraints>
+                            <constraint firstItem="jH7-wo-lWY" firstAttribute="leading" secondItem="uwI-fE-3Lt" secondAttribute="trailing" constant="12" id="5gz-tN-4t0"/>
+                            <constraint firstItem="jH7-wo-lWY" firstAttribute="centerY" secondItem="uwI-fE-3Lt" secondAttribute="centerY" id="P7l-tb-8Zs"/>
+                            <constraint firstItem="uwI-fE-3Lt" firstAttribute="centerY" secondItem="iHV-IW-QmC" secondAttribute="centerY" id="d2g-Gp-EYC"/>
+                            <constraint firstAttribute="trailing" secondItem="jH7-wo-lWY" secondAttribute="trailing" constant="12" id="wBP-5k-zrH"/>
+                            <constraint firstItem="uwI-fE-3Lt" firstAttribute="leading" secondItem="iHV-IW-QmC" secondAttribute="leading" constant="8" id="x5D-HP-dHq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="iHV-IW-QmC" firstAttribute="top" secondItem="bqV-J5-yFy" secondAttribute="top" constant="8" id="7Hi-St-QRf"/>
+                    <constraint firstAttribute="trailing" secondItem="iHV-IW-QmC" secondAttribute="trailing" constant="8" id="DRI-AQ-5bK"/>
+                    <constraint firstAttribute="bottom" secondItem="iHV-IW-QmC" secondAttribute="bottom" constant="8" id="Hrr-87-wQ8"/>
+                    <constraint firstItem="iHV-IW-QmC" firstAttribute="leading" secondItem="bqV-J5-yFy" secondAttribute="leading" constant="8" id="hPR-8I-aZo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="zxc-nQ-FaR"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="distanceLbl" destination="GVf-s1-596" id="CCi-dM-oNe"/>
+                <outlet property="numberOfPeopleLbl" destination="0GB-2u-web" id="SFT-1G-OM8"/>
+                <outlet property="placeName" destination="8Nq-DE-Gk7" id="uSZ-Zz-PbJ"/>
+            </connections>
+            <point key="canvasLocation" x="68.115942028985515" y="155.35714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Path 1780-1" width="51" height="71"/>
+        <namedColor name="backgroundCell">
+            <color red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
