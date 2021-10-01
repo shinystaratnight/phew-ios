@@ -859,7 +859,7 @@
 				4E731B40256BAA1700AADBBA /* VC */,
 				4E731B3F256BAA0B00AADBBA /* Cells  */,
 			);
-			path = "Show User ";
+			path = "Show User";
 			sourceTree = "<group>";
 		};
 		4E731B3F256BAA0B00AADBBA /* Cells  */ = {
@@ -867,7 +867,7 @@
 			children = (
 				4E731B41256BAA1E00AADBBA /* Header */,
 			);
-			path = "Cells ";
+			path = "Cells";
 			sourceTree = "<group>";
 		};
 		4E731B40256BAA1700AADBBA /* VC */ = {
@@ -922,7 +922,7 @@
 				4EEEC1EB25C18B2A00D51E4D /* VC */,
 				4EEEC1E925C18B1A00D51E4D /* Cells */,
 			);
-			path = "Chat ";
+			path = "Chat";
 			sourceTree = "<group>";
 		};
 		4E89079525938CEF0021CCF0 /* Unknown Messages */ = {
@@ -976,7 +976,7 @@
 				4E8A61EE25595CEE006C0371 /* ImageNormalPostCollectionViewCell.swift */,
 				4E8A61EF25595CEE006C0371 /* ImageNormalPostCollectionViewCell.xib */,
 			);
-			path = "Images Cell ";
+			path = "Images Cell";
 			sourceTree = "<group>";
 		};
 		4E8A61F625598828006C0371 /* Post Slider */ = {
@@ -1025,7 +1025,7 @@
 				4E9254F625C99002008352B5 /* connector */,
 				4E9254FA25C99002008352B5 /* Echo.swift */,
 			);
-			path = "Socket ";
+			path = "Socket";
 			sourceTree = "<group>";
 		};
 		4E9254EC25C99002008352B5 /* utils */ = {
@@ -1076,7 +1076,7 @@
 				4E3BEBAD25C2AED20076DCFE /* AudioCashURl.swift */,
 				4E3BEBB125C2B3C40076DCFE /* LocalStorageManger.swift */,
 			);
-			path = "Custome ";
+			path = "Custome";
 			sourceTree = "<group>";
 		};
 		4E9808A125BD8AD9004250A7 /* Findlay  */ = {
@@ -1085,7 +1085,7 @@
 				98E7E45F24F659780063D562 /* CitiesTabBarViewController.xib */,
 				98E7E45E24F659780063D562 /* CitiesTabBarViewController.swift */,
 			);
-			path = "Findlay ";
+			path = "Findlay";
 			sourceTree = "<group>";
 		};
 		4E9808A225BD8C6B004250A7 /* Show Posts City */ = {
@@ -1103,7 +1103,7 @@
 				4EA2BB0425FE5E0A006A2521 /* ListMyFriendsViewController.swift */,
 				4EA2BB0525FE5E0A006A2521 /* ListMyFriendsViewController.xib */,
 			);
-			path = "List My Friends ";
+			path = "List My Friends";
 			sourceTree = "<group>";
 		};
 		4EB1F67F25F61D8400EE5702 /* New Group */ = {
@@ -1138,7 +1138,7 @@
 				4ED933AB256A6DBD00AC23B6 /* CommentTableViewCell.xib */,
 				4ED933AA256A6DBD00AC23B6 /* CommentTableViewCell.swift */,
 			);
-			path = "Comment ";
+			path = "Comment";
 			sourceTree = "<group>";
 		};
 		4ED933B3256A78D100AC23B6 /* Multi Select Image */ = {
@@ -1164,7 +1164,7 @@
 			children = (
 				4EEC9774255AA6CC00442D9B /* Enums.swift */,
 			);
-			path = "Enums ";
+			path = "Enums";
 			sourceTree = "<group>";
 		};
 		4EEEC1E925C18B1A00D51E4D /* Cells */ = {
@@ -1200,7 +1200,7 @@
 				4EEEC1ED25C18B7E00D51E4D /* AudioTableViewCell.swift */,
 				4EEEC1EE25C18B7E00D51E4D /* AudioTableViewCell.xib */,
 			);
-			path = "Audio Record ";
+			path = "Audio Record";
 			sourceTree = "<group>";
 		};
 		4EF557812563E394001DA3F6 /* Post Watch */ = {
@@ -1218,7 +1218,7 @@
 				4EF557CA25641905001DA3F6 /* Cells */,
 				4EF557C8256418EE001DA3F6 /* VC */,
 			);
-			path = "Post Watch ";
+			path = "Post Watch";
 			sourceTree = "<group>";
 		};
 		4EF557C8256418EE001DA3F6 /* VC */ = {
