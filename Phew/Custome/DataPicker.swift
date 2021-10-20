@@ -26,27 +26,22 @@ class DataPicker:  UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
     static let instance = DataPicker()
     private var selectedIndex:Int?
     private var view : UIView!
-    private var isEmptyData = true
-    
+    private var isEmptyData = true    
     private var completion: ((Int?) -> Void)?
     private var picker = UIPickerView()
     
     func initPickerView(arrString:[String] = [],txtFileld : UITextField , view : UIView, complition:((Int?) -> Void)?) {
-        
         self.txtFiled = txtFileld
         self.view = view
         self.arr = arrString
         self.delegate = self
         txtFileld.inputView = self
         createToolbar()
-
         if  arrString.isEmpty {
             isEmptyData = true
         }else{
             isEmptyData = false
         }
-       
-        
         complition?(nil)
         txtFileld.text = nil
         self.completion = complition
@@ -60,6 +55,7 @@ class DataPicker:  UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
         toolBar.isUserInteractionEnabled = true
         txtFiled.inputAccessoryView = toolBar
     }
+    
     @objc func dismissKeyboard(){
         if isEmptyData {
             completion?(nil)
@@ -67,7 +63,7 @@ class DataPicker:  UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
             if  txtFiled.text == nil || txtFiled.text == "" {
                 txtFiled.text = arr.first
                 completion?(0)
-            }else{
+            } else {
                 completion?(selectedIndex)
             }
         }

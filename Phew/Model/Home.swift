@@ -52,8 +52,10 @@ struct HomeModel: Codable {
     let url: String?
     var likesCount: Int?
     var isShowFullPost: Bool?
+    var retweeted: Bool?
 
     enum CodingKeys: String, CodingKey {
+        case retweeted
         case isShowFullPost
         case id
         case postType = "post_type"

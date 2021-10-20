@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="TAHOMA_0.TTF">
+        <array key="Tahoma-Regular.ttf">
             <string>Tahoma</string>
         </array>
     </customFonts>
@@ -27,17 +27,17 @@
                         <rect key="frame" x="5" y="5" width="406" height="90"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohamed Akl Share Your Post" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2W-zV-UIT">
-                                <rect key="frame" x="80" y="20.5" width="321" height="14"/>
-                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="12"/>
+                                <rect key="frame" x="96" y="24" width="305" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="14"/>
                                 <color key="textColor" name="LableBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="followers" translatesAutoresizingMaskIntoConstraints="NO" id="lwS-JK-EKJ">
-                                <rect key="frame" x="60" y="20" width="15" height="15"/>
+                                <rect key="frame" x="60" y="20" width="24" height="24"/>
                                 <color key="tintColor" name="mainColorRed"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="15" id="acY-JW-v4R"/>
-                                    <constraint firstAttribute="width" constant="15" id="dYz-Ea-xl7"/>
+                                    <constraint firstAttribute="height" constant="24" id="acY-JW-v4R"/>
+                                    <constraint firstAttribute="width" constant="24" id="dYz-Ea-xl7"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crush" translatesAutoresizingMaskIntoConstraints="NO" id="hom-8L-oh1" customClass="CircleImageView" customModule="Phew" customModuleProvider="target">
@@ -48,18 +48,18 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday, 3 Nov 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lg1-fJ-yLO">
-                                <rect key="frame" x="67" y="43" width="99.5" height="22"/>
+                                <rect key="frame" x="67" y="43" width="108.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="C4w-W0-AG7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="11"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="12"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="backgroundCell"/>
                         <constraints>
-                            <constraint firstItem="K2W-zV-UIT" firstAttribute="leading" secondItem="lwS-JK-EKJ" secondAttribute="trailing" constant="5" id="8gh-wX-P2d"/>
+                            <constraint firstItem="K2W-zV-UIT" firstAttribute="leading" secondItem="lwS-JK-EKJ" secondAttribute="trailing" constant="12" id="8gh-wX-P2d"/>
                             <constraint firstItem="hom-8L-oh1" firstAttribute="centerY" secondItem="CFh-Ix-CGe" secondAttribute="centerY" id="Er9-Sj-Xyv"/>
                             <constraint firstItem="lg1-fJ-yLO" firstAttribute="bottom" secondItem="hom-8L-oh1" secondAttribute="bottom" constant="-5" id="H58-jO-Ylt"/>
                             <constraint firstItem="hom-8L-oh1" firstAttribute="leading" secondItem="CFh-Ix-CGe" secondAttribute="leading" constant="5" id="Huj-jA-zX0"/>
@@ -105,7 +105,7 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="mainColorRed">
-            <color red="0.88200002908706665" green="0.11800000071525574" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.88599997758865356" green="0.11800000071525574" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

@@ -23,6 +23,7 @@ class ShowUserProfileViewController: BaseViewController {
         .withSize(.init(all: 40))
         .withWidth(20)
         .withHeight(20) as! UIButton
+    
     init(userId: Int) {
         self.userId = userId
         super.init(nibName: nil, bundle: nil)
@@ -34,9 +35,9 @@ class ShowUserProfileViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         customImageNavigation()
-
+        
         featchUserProfile()
-    
+        
         NotificationCenter.default.addObserver(forName: UIApplication.userDidTakeScreenshotNotification, object: nil, queue: OperationQueue.main) { notification in
             print("Screenshot taken!")
         }

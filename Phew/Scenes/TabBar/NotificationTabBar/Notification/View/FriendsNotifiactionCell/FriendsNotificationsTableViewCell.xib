@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="TAHOMA_0.TTF">
+        <array key="Tahoma-Regular.ttf">
             <string>Tahoma</string>
         </array>
     </customFonts>
@@ -27,8 +27,8 @@
                         <rect key="frame" x="5" y="5" width="396" height="120"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohamed Akl Send Friend Request" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ico-aZ-PFC">
-                                <rect key="frame" x="67" y="22" width="324" height="15.5"/>
-                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
+                                <rect key="frame" x="67" y="22" width="324" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="14"/>
                                 <color key="textColor" name="textColorBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -138,7 +138,7 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="textColorBlack">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.39599999785423279" green="0.38400000333786011" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

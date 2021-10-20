@@ -33,7 +33,7 @@ class MainPostTableViewCell: UITableViewCell {
     @IBOutlet weak var btnFavOutlet: UIButton!
     @IBOutlet weak var viewLine: UIView!
     @IBOutlet weak var stackActionButtons: UIStackView!
-
+    
     @IBOutlet weak var lblCountLike: UILabel!
     
     @IBOutlet weak var echoButtonOutlet: UIButton!
@@ -57,20 +57,18 @@ class MainPostTableViewCell: UITableViewCell {
     }
     func addLongPressGesture(){
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(didLongPress(sender:)))
-            longPress.minimumPressDuration = 0.5
-            self.btnLikeOutlet.addGestureRecognizer(longPress)
-        }
+        longPress.minimumPressDuration = 0.5
+        self.btnLikeOutlet.addGestureRecognizer(longPress)
+    }
     
     @objc func didLongPress(sender: UILongPressGestureRecognizer) {
         if sender.state == UIGestureRecognizer.State.began {
             likeView?.setView(leadingAnchor: btnLikeOutlet.leadingAnchor, bouttomAnchor: (btnLikeOutlet.centerXAnchor))
             
-        }else if sender.state == .changed {
+        } else if sender.state == .changed {
             let x = sender.location(in: self).x
             likeView?.animation(location: x)
-        }
-        
-        else if sender.state == .ended {
+        } else if sender.state == .ended {
             likeView?.didSelectReact = { [weak self] selectedReact in
                 guard selectedReact != "cancel" else {
                     return
@@ -109,31 +107,28 @@ class MainPostTableViewCell: UITableViewCell {
         let _countCharacter = Int(countCharacter) ?? 0
         lblSeeMore.isHidden = text.count >=  _countCharacter ? false : true
     }
+    
     var item: HomeModel!{
         didSet{
             lblCountLike.text = String(item.likesCount ?? 0)
-          
             // set image reacted
             btnLikeOutlet.setImage(UIImage(named: item.likeType ?? Helper.getNameReact(tag: -1)), for: .normal)
-            
             // check for if it my pos
             if let arrScreen = item.screenShots, arrScreen.count > 0 {
                 lblCountScreenShot.isHidden = false
                 btnShowUserScreenshotOutlet.isHidden = false
                 lblCountScreenShot.text = String(arrScreen.count)
-            }else{
+            } else {
                 lblCountScreenShot.isHidden = true
                 btnShowUserScreenshotOutlet.isHidden = true
             }
-
             // check for owner of post
             let userId = AuthService.userData?.id ?? 0
             let userPostId = item.user?.id ?? 0
             btnEditPostOutlet.isHidden = userId == userPostId ? false : true
-            
             lblCommentCount.text = String(item.commentsCount ?? 0)
             getViewModelArray(text: item.text, arrVideos: item.videos, arrImages: item.images)
-//            imageUSer.load(with: item.user?.profileImage)
+            //            imageUSer.load(with: item.user?.profileImage)
             imageUSer.image = UIImage(named: "avatar")
             lblUserName.text = item.user?.fullname?.components(separatedBy: " ").first
             let imageStar: String = (item.isFav ?? false) == true ? "starFill": "star"
@@ -141,30 +136,31 @@ class MainPostTableViewCell: UITableViewCell {
             lblCommentCount.text = String(item.commentsCount ?? 0)
             lblDate.text = item.createdAgo ?? ""
             collectionViewImages.reloadData()
+            let size: CGSize = CGSize(width: 12.0, height: 24.0)
+            let tintImage = item.retweeted == true ? UIImage(named: "Group 1622")?.resizedImage(size: size) : UIImage(named: "echo_post")?.resizedImage(size: size)
+            echoButtonOutlet.imageView?.contentMode = .scaleAspectFill
+            echoButtonOutlet.setImage(tintImage, for: .normal)
         }
     }
     
     private func didTapImages(){
         imageUSer.isUserInteractionEnabled = true
-       
         let tapUserImage = UITapGestureRecognizer(target: self, action: #selector(userImageTapped))
         imageUSer.addGestureRecognizer(tapUserImage)
     }
     
     @objc private func userImageTapped(){
         deleget?.didTappedUserImage(cell: self)
-        
     }
 }
 
 extension MainPostTableViewCell{
+    
     private func getViewModelArray(text:String?, arrVideos:[Image]?, arrImages:[Image]?){
         lblText.isHidden =  (text ?? "").isEmpty ? true : false
         setTextPost()
-        
         arrPostNormal.removeAll()
         arrPostNormal =  Helper.getArrayMedia(arrVideos: arrVideos, arrImages:arrImages)
-        
         collectionViewImages.isHidden = arrPostNormal.count == 0 ? true : false
     }
 }
@@ -174,9 +170,10 @@ extension MainPostTableViewCell:UICollectionViewDelegate, UICollectionViewDataSo
     private func iniCollectionView(){
         collectionViewImages.delegate = self
         collectionViewImages.dataSource = self
-       
+        
         collectionViewImages.register(UINib(nibName: "ImageNormalPostCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageNormalPostCollectionViewCell")
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrPostNormal.count
     }
@@ -197,17 +194,14 @@ extension MainPostTableViewCell:UICollectionViewDelegate, UICollectionViewDataSo
         }else{
             return 5
         }
-        
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        
         let width = collectionView.frame.width - 20
         switch arrPostNormal.count {
         case 1:
             return CGSize(width: collectionView.frame.width, height: 120)
         case 2:
-            
             return CGSize(width:width / 2, height: 120)
         case 3:
             return CGSize(width: width / 3, height: 120)
@@ -215,13 +209,13 @@ extension MainPostTableViewCell:UICollectionViewDelegate, UICollectionViewDataSo
             return CGSize(width: width / 3 , height: 120)
         }
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if arrPostNormal.count == 1{
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }else{
             return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
         }
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

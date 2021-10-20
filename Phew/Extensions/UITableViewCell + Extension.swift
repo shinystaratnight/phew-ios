@@ -21,13 +21,13 @@ extension UITableView {
         guard let cell = self.dequeueReusableCell(withIdentifier: identifier) as? Cell else {
             fatalError("Error in cell")
         }
-        
         return cell
     }
 }
 
 
 extension UITableView {
+    
     func scrollToBottom(animated: Bool = true) {
         let section = numberOfSections
         if section > 0 {

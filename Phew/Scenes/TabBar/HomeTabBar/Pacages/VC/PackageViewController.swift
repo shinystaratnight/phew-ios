@@ -9,7 +9,7 @@
 import UIKit
 
 class PackageViewController: BaseViewController {
-
+    
     @IBOutlet weak var tableview: UITableView!
     private var id: Int?
     private var arrPackages: [PackageModel] = []
@@ -27,12 +27,14 @@ class PackageViewController: BaseViewController {
 }
 
 extension PackageViewController: UITableViewDelegate, UITableViewDataSource {
+    
     private func iniTableView() {
         tableview.delegate = self
         tableview.dataSource = self
         tableview.registerCellNib(cellClass: PackagesTableViewCell.self)
         tableview.rowHeight = 80
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrPackages.count
     }
@@ -50,13 +52,13 @@ extension PackageViewController: UITableViewDelegate, UITableViewDataSource {
         arrPackages[indexPath.row].isSelected = true
         id = arrPackages[indexPath.row].id
         tableview.reloadData()
-        
     }
 }
+
 extension PackageViewController {
+    
     private func fetchPackages() {
         repo.request(BaseModelWith<[PackageModel]>.self, GeneralRouter.packages) { [weak self] (response) in
-            
             guard let arr = response?.data else {return}
             self?.arrPackages = arr
             self?.tableview.reloadData()

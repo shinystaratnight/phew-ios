@@ -33,21 +33,15 @@ class LocalStorageManger: NSObject {
     func cache<T: Codable>(_ data: T, key: CacheKeys, completion: (() -> Void)? = nil) {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let self = self else { return }
-
             let diskConfig = self.getDiskConfig()
             let memoryConfig = self.getMemoryConfig()
-
             do {
                 let storage = try Storage(diskConfig: diskConfig, memoryConfig: memoryConfig, transformer: TransformerFactory.forData())
-
                 let productStorage = storage.transformCodable(ofType: T.self)
-
                 try productStorage.setObject(data, forKey: key.rawValue)
-
                 DispatchQueue.main.sync {
                     completion?()
                 }
-
             } catch {
                 debugPrint(error.localizedDescription)
             }
@@ -60,14 +54,11 @@ class LocalStorageManger: NSObject {
         DispatchQueue.global(qos: .userInitiated).async {
             do {
                 let storage = try Storage(diskConfig: diskConfig, memoryConfig: memoryConfig, transformer: TransformerFactory.forData())
-
                 let productStorage = storage.transformCodable(ofType: T.self)
                 let data = try productStorage.object(forKey: key.rawValue)
-
                 DispatchQueue.main.async {
                     completion(data)
                 }
-
             } catch {
                 completion(nil)
                 debugPrint(error.localizedDescription)
