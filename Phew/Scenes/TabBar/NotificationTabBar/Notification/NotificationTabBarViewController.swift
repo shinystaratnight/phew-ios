@@ -18,10 +18,14 @@ struct Notifications {
 
 class NotificationTabBarViewController: BaseViewController {
     
+    @IBOutlet weak var topSV: UIStackView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var countFriendLbl: UILabel!
     private var refreshControl = UIRefreshControl()
     private var arrNotification: [NotificationModel] = []
+    
+    private var lastContentOffset: CGFloat = 0
+    var isShowBarButtons: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,6 +103,47 @@ extension NotificationTabBarViewController: UITableViewDelegate, UITableViewData
             deleteNotification(index: indexPath.row)
         }
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if arrNotification.count < 4 {
+            return
+        }
+        let bottomOffset = CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.size.height + scrollView.contentInset.bottom)
+        let topOffset = CGPoint(x: 0, y: 0)
+        
+        if scrollView.contentOffset.y >= bottomOffset.y {
+            
+            hideHomeViewButtons()
+            return
+        } else if scrollView.contentOffset.y <= topOffset.y { // top
+            showHomeViewButtons()
+            return
+        }
+        
+        if lastContentOffset > scrollView.contentOffset.y {
+            showHomeViewButtons()
+        } else if lastContentOffset < scrollView.contentOffset.y, scrollView.contentOffset.y > 60 {
+            hideHomeViewButtons()
+        }
+        lastContentOffset = scrollView.contentOffset.y
+    }
+    
+    private func hideHomeViewButtons() {
+        guard !isShowBarButtons else { return }
+        UIView.animate(withDuration: 0.5) {
+            self.topSV.transform = .init(translationX: 0, y: -250)
+        }
+        topSV.isHidden = true
+        isShowBarButtons = true
+    }
+    private func showHomeViewButtons() {
+        guard isShowBarButtons else { return }
+        UIView.animate(withDuration: 0.5) {
+            self.topSV.transform = .identity
+        }
+        isShowBarButtons = false
+        topSV.isHidden = false
+    }
 }
 
 extension NotificationTabBarViewController: FriendsNotificationsDelegate {
@@ -151,6 +196,5 @@ extension NotificationTabBarViewController {
     private func countFriendsRequest() {
       let count =  arrNotification.filter({$0.key == NotificationKeys.friendRequest.rawValue}).count
         countFriendLbl.text = String(count)
-       
     }
 }

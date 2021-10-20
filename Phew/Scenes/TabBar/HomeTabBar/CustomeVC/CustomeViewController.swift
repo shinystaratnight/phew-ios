@@ -33,6 +33,7 @@ class CustomeViewController: BaseViewController {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
+    
     private var lastContentOffset: CGFloat = 0
     var isShowBarButtons: Bool = false
     var postType: PostType! = .global {
@@ -43,7 +44,6 @@ class CustomeViewController: BaseViewController {
     
     var featchHome: Bool = true{
         didSet {
-            
             feachHomeData(showIndicator: false)
         }
     }

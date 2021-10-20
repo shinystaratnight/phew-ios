@@ -19,7 +19,8 @@ class ShareTextPostTableViewCell: UITableViewCell {
     @IBOutlet weak var lblNmaeUser: UILabel!
     @IBOutlet weak var lblPost: UILabel!
     @IBOutlet weak var lblSeeMorePost: UILabel!
-
+    @IBOutlet weak var btnEcho: UIButton!
+    
     @IBOutlet weak var imagePostUser: UIImageView!
     @IBOutlet weak var lblPostDate: UILabel!
     @IBOutlet weak var lblPostUSerName: UILabel!
@@ -124,6 +125,11 @@ class ShareTextPostTableViewCell: UITableViewCell {
                 btnShowUserScreenshotOutlet.isHidden = true
             }
             setSeeMoreForText()
+            
+            let size: CGSize = CGSize(width: 12.0, height: 24.0)
+            let tintImage = item.retweeted == true ? UIImage(named: "Group 1622")?.resizedImage(size: size) : UIImage(named: "echo_post")?.resizedImage(size: size)
+            btnEcho.imageView?.contentMode = .scaleAspectFill
+            btnEcho.setImage(tintImage, for: .normal)
             
         }
     }

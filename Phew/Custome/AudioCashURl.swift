@@ -11,6 +11,7 @@ import Foundation
 
 import Foundation
 class AudioUrlCach {
+    
     static var shared = AudioUrlCach()
     
     private var cachedData: [String: String]?
@@ -19,19 +20,18 @@ class AudioUrlCach {
         LocalStorageManger.shared.feachDataFromCache([String: String].self, key: .event) { data in
             guard data != nil else {return compleation(nil)}
             DispatchQueue.main.async {
-                
                 var localUrl: String?
-              let _ =  data?.filter({ (_key, value) -> Bool in
-                if _key.contains(key) {
+                let _ =  data?.filter({ (_key, value) -> Bool in
+                    if _key.contains(key) {
                         localUrl = value
                     }
                     return true
                 })
                 compleation(localUrl)
-                
             }
         }
     }
+    
     func getAllURL() {
         LocalStorageManger.shared.feachDataFromCache([String: String].self, key: .event) { (data) in
             print(data as Any)

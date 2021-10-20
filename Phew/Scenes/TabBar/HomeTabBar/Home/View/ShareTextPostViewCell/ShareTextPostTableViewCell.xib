@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -44,13 +44,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohamed Akl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbD-FT-PMw">
-                                <rect key="frame" x="35" y="5.5" width="89.5" height="28.5"/>
+                                <rect key="frame" x="35" y="11" width="93" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpr-NO-Mzk">
-                                <rect key="frame" x="136.5" y="5.5" width="41.5" height="28.5"/>
+                                <rect key="frame" x="140" y="11" width="44.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -138,7 +138,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crush" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-9l-Tv9" customClass="CircleImageView" customModule="Phew" customModuleProvider="target">
-                                <rect key="frame" x="12" y="38" width="50" height="50"/>
+                                <rect key="frame" x="12" y="32.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Bh4-68-PQU"/>
                                     <constraint firstAttribute="height" constant="50" id="hUP-NJ-Jo3"/>
@@ -150,28 +150,28 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohamed Akl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYQ-sj-tqZ">
-                                <rect key="frame" x="74" y="46" width="89.5" height="28.5"/>
+                                <rect key="frame" x="74" y="40.5" width="93" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtO-Hx-ww4">
-                                <rect key="frame" x="175.5" y="46" width="41.5" height="28.5"/>
+                                <rect key="frame" x="179" y="40.5" width="44.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xls-uN-vA2">
-                                <rect key="frame" x="74" y="79.5" width="540" height="33.5"/>
+                                <rect key="frame" x="74" y="63" width="540" height="32.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4c-NF-cdP">
-                                        <rect key="frame" x="0.0" y="0.0" width="540" height="16"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="15.5"/>
                                         <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ead-No-f9G">
-                                        <rect key="frame" x="0.0" y="21" width="540" height="12.5"/>
+                                        <rect key="frame" x="0.0" y="20.5" width="540" height="12"/>
                                         <fontDescription key="fontDescription" name="Tahoma-Bold" family="Tahoma" pointSize="10"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -179,7 +179,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3Aw-7g-CVL">
-                                <rect key="frame" x="74" y="118" width="540" height="191"/>
+                                <rect key="frame" x="74" y="100.5" width="540" height="208.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FqM-7G-Lkg">
                                     <size key="itemSize" width="128" height="128"/>
@@ -189,7 +189,7 @@
                                 </collectionViewFlowLayout>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9qT-Kn-1GP">
-                                <rect key="frame" x="527.5" y="45" width="98.5" height="30"/>
+                                <rect key="frame" x="527.5" y="34" width="98.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIe-rf-TVb">
                                         <rect key="frame" x="0.0" y="0.0" width="28.5" height="30"/>
@@ -267,6 +267,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="btnEcho" destination="pb6-oT-Hq7" id="sO6-c0-M7i"/>
                 <outlet property="btnFavOutlet" destination="2K4-8Q-4RZ" id="UuV-1b-SUP"/>
                 <outlet property="btnLikeOutlet" destination="p9v-hD-u93" id="Fpn-PE-Q09"/>
                 <outlet property="btnShowPostOutlet" destination="PGG-TX-b6f" id="XDf-mR-HkA"/>
